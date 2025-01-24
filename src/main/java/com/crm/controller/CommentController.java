@@ -23,6 +23,7 @@ public class CommentController {
     public String createComment(
             @RequestBody Comment comment,
             @RequestParam long postId) {
+        System.out.print.ln(1000);
 
         Post post = postRepository.findById(postId).get();
 
